@@ -39,7 +39,25 @@ The version history for this app will be organized in a four-digit **W.X.Y.Z** s
 
 When working in feature branches I do not assign version numbers.  Version numbers are only assigned when a feature branch is merged into the main branch.  For this reason, entries in the **Version History** may not be overall sequential for time if I am working on serveral feature branches at once.
 
+There are three types of branches I maintain.
+* **Feature Branches** are used to build functional components of this application.
+* Branch *meta-changes* is used for small changes to the app that do not warrant creation of a new branch due to nature or scope.  It is also used to update commit notes for the branch *main* after merging a feature branch.
+* Branch *main* has all completed features merged from feature branches or the meta-changes branch.
+
 ### Version History
+
+#### BRANCH main
+##### v 0.1.1.0 26 August 2021 | commit 79090435b978f0a218e3477e8ce0087ef3830012 | Current Version
+* On GitHub: Merge pull request #1 from mhsmith321/initialize-README
+* [Commit Notes](#branch-initialize-readme)
+* [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/1)
+
+#### BRANCH meta-changes
+##### 26 August 2021 | commit --
+* Created explanation in the `README.md` file of the *meta-changes* branch.
+* Updated *BRANCH main* commit notes for pull-request on *initialize-README* branch.
+
+<a id='branch-initialize-readme'></a>
 
 #### BRANCH initialize-README
 ##### 26 August 2021 | commit 90b0a5cb4f18be07ea48728143cf3615af03e8cf
@@ -58,7 +76,7 @@ When working in feature branches I do not assign version numbers.  Version numbe
 ##### 26 August 2021 | commit 4a0a24c83989555bce4396957bb6157620effba4
 * Removed an extra *Version Notes* section from `README.md` file, presumably made erroneously.
 * Built out *Future Plans* section of the `README.md` file (short and long-term plans).
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit acd06a166c359dce17647b8096d4dc1fc58623a7
 * Fixed broken link in *Table of Contents* of `README.md` pointing to the *Appendix 1* sub-section.
 * Added placeholder content to *Instructions for Use* section the `README.md` file.
 
