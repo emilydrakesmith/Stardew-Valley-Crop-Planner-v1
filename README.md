@@ -101,11 +101,13 @@ There are three types of branches I maintain.
 <a id='branch-create-initial-landing-page'></a>
 
 #### BRANCH create-initial-landing-page
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit 82fc4fce65103146bba23848a46dee67d5523e22
 * Initialized a new directory `/src/pages` to store page functions.
 * Moved `App.js` and `App.css` files into a dedicated `/src/pages/App` directory.
 * Initialized a new `/src/pages/Landing` directory with `Landing.jsx` and `Landing.css` files.
 * Import `<Landing />` into `App.js` and successfully render dummy JSX.
+##### 26 August 2021 | commit --
+* Use `useState` hook to get a value for boxes to be rendered across in crop planner grid.
 
 [Back to Top](#top)
 
