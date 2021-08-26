@@ -51,11 +51,22 @@ There are three types of branches I maintain.
 * On GitHub: Merge pull request #1 from mhsmith321/initialize-README
 * [Commit Notes](#branch-initialize-readme)
 * [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/1)
+##### v 0.1.1.1 | 26 August 2021 | commit 79090435b978f0a218e3477e8ce0087ef3830012 | Current Version
+* On GitHub: Merge pull request #3 from mhsmith321/create-calendar-data
+* [Commit Notes](#branch-create-calendar-data)
+* [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/3)
+
 
 #### BRANCH meta-changes
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit 798ebe92b0847e0b272c5d164e2aa038e26c8745
 * Created explanation in the `README.md` file of the *meta-changes* branch.
 * Updated *BRANCH main* commit notes for pull-request on *initialize-README* branch.
+##### 26 August 2021 | commit --
+* Updated *BRANCH main* commit notes for pull-request on *create-calendar-data* branch.
+* Deleted several unnecessary boilerplate files initialized by *create-react-app*:
+  * `App.test.js`
+  * `setupTests.js`
+  * `reportWebVitals.js` (also removed import & function call from index.js)
 
 <a id='branch-initialize-readme'></a>
 
@@ -80,8 +91,10 @@ There are three types of branches I maintain.
 * Fixed broken link in *Table of Contents* of `README.md` pointing to the *Appendix 1* sub-section.
 * Added placeholder content to *Instructions for Use* section the `README.md` file.
 
+<a id='branch-create-calendar-data'></a>
+
 #### BRANCH create-calendar-data
-##### 26 August 2021 | commit -- 
+##### 26 August 2021 | commit d577ef8959daecb88f1d07c16e06072995c45d95 
 * Initialized a directory `/src/data` to store internal app data.
 * Initialized a `calendarData.js` file in the `/src/data` directory with basic calendar data.
 
