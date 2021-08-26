@@ -26,13 +26,6 @@ The purpose of this app is to allow users to organize crop plantings in the game
 
 # Version Notes
 
-[Back to Top](#top)
-
-
-<a id='version-notes'></a>
-
-# Version Notes
-
 ### About Version Notes
 
 The version history for this app will be organized in a four-digit **W.X.Y.Z** system.
@@ -57,9 +50,12 @@ When working in feature branches I do not assign version numbers.  Version numbe
 * Added a remote origin to attach this project to its GitHub repo.
   * CLI: `git remote add origin https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1.git`
 * Added basic information about this project's purpose (functionally and professionally) to the *Introduction of the `README.md` file.
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit 5e3071551fe2145d0471e615ba616e827b3e2672
 * Built out *Tech Stack* section of the `README.md` file.
 * Built out *Contribute* section of the `README.md` file.
+##### 26 August 2021 | commit --
+* Removed an extra *Version Notes* section from `README.md` file, presumably made erroneously.
+* Built out *Future Plans* section of the `README.md` file (short and long-term plans).
 
 [Back to Top](#top)
 
@@ -88,6 +84,37 @@ When working in feature branches I do not assign version numbers.  Version numbe
 <a id='future-plans'></a>
 
 # Future Plans
+
+### MVP/Short Term
+* Finish building out `README.md` with basic/initial content in all sections.
+* Create files with basic Stardew Valley data to feed into the app.
+  * Crop Data
+    * Name (string)
+    * Seed Cost (number)
+      * account for event-based variability?
+    * Days until Harvest (number)
+    * Crop Value (number)
+      * account for crop-quality
+    * Seasonality (array of strings)
+  * Calendar Data
+    * Season Name (string)
+    * Season Number (number)
+    * Day Name (string)
+    * Day Number (number)
+    * Note: this data may be part stored in JSON data, part calculated by JS
+* Create an interface for the user to specify grid size.
+* Write code to generate an interactable grid sized to match user-input.
+* Add interactability to allow crops to be assigned to the grid.
+* Create day-by-day calendar views showing crop progress.
+* Create an itemized seed shopping list for the user based on crop layout.
+* Create a calendar showing crop harvest dates with anticipated yields.
+
+### Ice Box
+* Add a back-end to the app.
+  * Allow users to create accounts with usual account management features.
+  * Add Auth as applicable.  OAuth?
+  * Allow users to perform CRUD operations on created crop diagrams.
+  * Create other social features: diagram sharing, privacy, etc.
 
 [Back to Top](#top)
 
