@@ -47,26 +47,31 @@ There are three types of branches I maintain.
 ### Version History
 
 #### BRANCH main
-##### v 0.1.1.0 26 August 2021 | commit 79090435b978f0a218e3477e8ce0087ef3830012 | Current Version
+##### v 0.1.1.0 26 August 2021 | commit 79090435b978f0a218e3477e8ce0087ef3830012
 * On GitHub: Merge pull request #1 from mhsmith321/initialize-README
 * [Commit Notes](#branch-initialize-readme)
 * [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/1)
-##### v 0.1.1.1 | 26 August 2021 | commit 79090435b978f0a218e3477e8ce0087ef3830012 | Current Version
+##### v 0.1.1.1 | 26 August 2021 | commit 79090435b978f0a218e3477e8ce0087ef3830012
 * On GitHub: Merge pull request #3 from mhsmith321/create-calendar-data
 * [Commit Notes](#branch-create-calendar-data)
 * [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/3)
-
+##### v 0.1.2.0 | 26 August 2021 | commit bad9404d3be21c5c6067a60a0e67d5dca1e156f5 | Current Version
+* On GitHub: Merge pull request #5 from mhsmith321/create-initial-landing-page
+* [Commit Notes](#branch-create-initial-landing-page)
+* [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/5)
 
 #### BRANCH meta-changes
 ##### 26 August 2021 | commit 798ebe92b0847e0b272c5d164e2aa038e26c8745
 * Created explanation in the `README.md` file of the *meta-changes* branch.
 * Updated *BRANCH main* commit notes for pull-request on *initialize-README* branch.
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit 69f21bfd870045939835396a1d5e8a394fcd2154
 * Updated *BRANCH main* commit notes for pull-request on *create-calendar-data* branch.
 * Deleted several unnecessary boilerplate files initialized by *create-react-app*:
   * `App.test.js`
   * `setupTests.js`
   * `reportWebVitals.js` (also removed import & function call from index.js)
+##### 26 August 2021 | commit --
+* Updated *BRANCH main* commit notes for pull-request on *create-initial-landing-page* branch.
 
 <a id='branch-initialize-readme'></a>
 
@@ -112,7 +117,7 @@ There are three types of branches I maintain.
 * Move `<Landing />` of out the `<Header>` element in the `App.js` file.
 * Use `useState` hook to get a value for boxes to be rendered down in crop planner grid.
 * Called the two `useState` hooks in `<Landing />` to get boxes down & across in one meta-function.
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit eb794d135fc5d47c2873ec5efd6ae4b2644a6d13
 * Add comments to `<Landing />` to better section-off code and explain how it works.
 
 [Back to Top](#top)
