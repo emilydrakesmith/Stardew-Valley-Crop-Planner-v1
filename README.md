@@ -98,6 +98,23 @@ There are three types of branches I maintain.
 * Initialized a directory `/src/data` to store internal app data.
 * Initialized a `calendarData.js` file in the `/src/data` directory with basic calendar data.
 
+<a id='branch-create-initial-landing-page'></a>
+
+#### BRANCH create-initial-landing-page
+##### 26 August 2021 | commit 82fc4fce65103146bba23848a46dee67d5523e22
+* Initialized a new directory `/src/pages` to store page functions.
+* Moved `App.js` and `App.css` files into a dedicated `/src/pages/App` directory.
+* Initialized a new `/src/pages/Landing` directory with `Landing.jsx` and `Landing.css` files.
+* Import `<Landing />` into `App.js` and successfully render dummy JSX.
+##### 26 August 2021 | commit 81f6d8f274c24507c138c9d99047296411fd2376
+* Use `useState` hook to get a value for boxes to be rendered across in crop planner grid.
+##### 26 August 2021 | commit 5310dfa5f6d2afc3c0d05d570ffccf2ab5b78f9f
+* Move `<Landing />` of out the `<Header>` element in the `App.js` file.
+* Use `useState` hook to get a value for boxes to be rendered down in crop planner grid.
+* Called the two `useState` hooks in `<Landing />` to get boxes down & across in one meta-function.
+##### 26 August 2021 | commit --
+* Add comments to `<Landing />` to better section-off code and explain how it works.
+
 [Back to Top](#top)
 
 
