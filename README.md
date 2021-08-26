@@ -80,6 +80,11 @@ There are three types of branches I maintain.
 * Fixed broken link in *Table of Contents* of `README.md` pointing to the *Appendix 1* sub-section.
 * Added placeholder content to *Instructions for Use* section the `README.md` file.
 
+#### BRANCH create-calendar-data
+##### 26 August 2021 | commit -- 
+* Initialized a directory `/src/data` to store internal app data.
+* Initialized a `calendarData.js` file in the `/src/data` directory with basic calendar data.
+
 [Back to Top](#top)
 
 
@@ -119,12 +124,6 @@ There are three types of branches I maintain.
     * Crop Value (number)
       * account for crop-quality
     * Seasonality (array of strings)
-  * Calendar Data
-    * Season Name (string)
-    * Season Number (number)
-    * Day Name (string)
-    * Day Number (number)
-    * Note: this data may be part stored in JSON data, part calculated by JS
 * Create an interface for the user to specify grid size.
 * Write code to generate an interactable grid sized to match user-input.
 * Add interactability to allow crops to be assigned to the grid.
