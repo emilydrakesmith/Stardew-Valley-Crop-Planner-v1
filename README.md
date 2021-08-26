@@ -106,8 +106,12 @@ There are three types of branches I maintain.
 * Moved `App.js` and `App.css` files into a dedicated `/src/pages/App` directory.
 * Initialized a new `/src/pages/Landing` directory with `Landing.jsx` and `Landing.css` files.
 * Import `<Landing />` into `App.js` and successfully render dummy JSX.
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit 81f6d8f274c24507c138c9d99047296411fd2376
 * Use `useState` hook to get a value for boxes to be rendered across in crop planner grid.
+##### 26 August 2021 | commit --
+* Move `<Landing />` of out the `<Header>` element in the `App.js` file.
+* Use `useState` hook to get a value for boxes to be rendered down in crop planner grid.
+* Called the two `useState` hooks in `<Landing />` to get boxes down & across in one meta-function.
 
 [Back to Top](#top)
 
