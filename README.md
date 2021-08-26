@@ -98,6 +98,15 @@ There are three types of branches I maintain.
 * Initialized a directory `/src/data` to store internal app data.
 * Initialized a `calendarData.js` file in the `/src/data` directory with basic calendar data.
 
+<a id='branch-create-initial-landing-page'></a>
+
+#### BRANCH create-initial-landing-page
+##### 26 August 2021 | commit --
+* Initialized a new directory `/src/pages` to store page functions.
+* Moved `App.js` and `App.css` files into a dedicated `/src/pages/App` directory.
+* Initialized a new `/src/pages/Landing` directory with `Landing.jsx` and `Landing.css` files.
+* Import `<Landing />` into `App.js` and successfully render dummy JSX.
+
 [Back to Top](#top)
 
 
