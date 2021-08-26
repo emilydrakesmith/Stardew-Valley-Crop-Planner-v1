@@ -12,12 +12,14 @@ The purpose of this app is to allow users to organize crop plantings in the game
 5. [Contribute](#contribute)
 6. [Special Thanks](#special-thanks)
 7. [Appendices](#appendices)
-   1. [Boilerplate Content from create-react-app]
+   1. [Boilerplate Content from create-react-app](#appendix-1)
 
 
 <a id='instructions-for-use'></a>
 
 # Instructions for Use
+
+**Content will be added to this section as features are completed and implemented in this project.**
 
 [Back to Top](#top)
 
@@ -53,9 +55,12 @@ When working in feature branches I do not assign version numbers.  Version numbe
 ##### 26 August 2021 | commit 5e3071551fe2145d0471e615ba616e827b3e2672
 * Built out *Tech Stack* section of the `README.md` file.
 * Built out *Contribute* section of the `README.md` file.
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit 4a0a24c83989555bce4396957bb6157620effba4
 * Removed an extra *Version Notes* section from `README.md` file, presumably made erroneously.
 * Built out *Future Plans* section of the `README.md` file (short and long-term plans).
+##### 26 August 2021 | commit --
+* Fixed broken link in *Table of Contents* of `README.md` pointing to the *Appendix 1* sub-section.
+* Added placeholder content to *Instructions for Use* section the `README.md` file.
 
 [Back to Top](#top)
 
@@ -138,13 +143,11 @@ If you'd like to learn more about the developer, please visit [my website](https
 
 [Back to Top](#top)
 
-
-
-
-
 <a id='appendices'></a>
 
 # Appendices
+
+<a id='appendix-1'></a>
 
 ## Appendix 1: Boilerplate Content from create-react-app
 
