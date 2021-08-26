@@ -49,7 +49,7 @@ When working in feature branches I do not assign version numbers.  Version numbe
 #### BRANCH initialize-README
 ##### 26 August 2021 | commit 90b0a5cb4f18be07ea48728143cf3615af03e8cf
 * Initial commit of this project.
-##### 26 August 2021 | commit --
+##### 26 August 2021 | commit 08b1ca45b47fb6b66414203505ff0482d587b953
 * Added a *Table of Contents* to this `README.md` file.  Initialized all sections with anchors for in-page links.
 * Created *Back to Top* in-page links at the end of each `README.md` section.
 * Created *About Version Notes* sub-section to explain organization of the Version History in `README.md`.
@@ -57,6 +57,9 @@ When working in feature branches I do not assign version numbers.  Version numbe
 * Added a remote origin to attach this project to its GitHub repo.
   * CLI: `git remote add origin https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1.git`
 * Added basic information about this project's purpose (functionally and professionally) to the *Introduction of the `README.md` file.
+##### 26 August 2021 | commit --
+* Built out *Tech Stack* section of the `README.md` file.
+* Built out *Contribute* section of the `README.md` file.
 
 [Back to Top](#top)
 
@@ -64,6 +67,20 @@ When working in feature branches I do not assign version numbers.  Version numbe
 <a id='tech-framework'></a>
 
 # Tech Framework
+
+### This app uses:
+* HTML5 and CSS3
+* JavaScript ES+
+* [React](https://reactjs.org/)
+* [React Table](https://react-table.tanstack.com/)
+
+### I built this app with:
+* [VSCode](https://code.visualstudio.com/) version 1.59.0 (and higher)
+* Google Chrome version 92.0.4515.159 (and higher)
+* macOS Big Sur version 11.5.2 (and higher)
+
+### This app is hosted at:
+* [GitHub Repo](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1)
 
 [Back to Top](#top)
 
@@ -79,12 +96,18 @@ When working in feature branches I do not assign version numbers.  Version numbe
 
 # Contribute
 
+Although I'm always interested in meeting new collaborators I prefer to keep this an individual project.
+
+If you'd like to learn more about the developer, please visit [my website](https://martysmith.tech/) and [my GitHub](https://github.com/mhsmith321).
+
 [Back to Top](#top)
 
 
 <a id='special-thanks'></a>
 
 # Special Thanks
+* The game [Stardew Valley](https://www.stardewvalley.net/) was amazingly created by the solo efforts of [Eric Barone](https://twitter.com/ConcernedApe).
+
 
 [Back to Top](#top)
 
