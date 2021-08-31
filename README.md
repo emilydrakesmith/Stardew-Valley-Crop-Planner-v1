@@ -134,10 +134,13 @@ There are three types of branches I maintain.
 ##### 31 August 2021 | commit 85fcae78c4aa3a0ef6a360d1aa90785a61432b2c
 * Deleted the folder `CropColumn` and the files `CropColumn.jsx` and `CropColumn.css` as I was having trouble nesting these functions.  All the same processes and styles are now in the `CropGrid.jsx` and `CropGrid.css` files.
 * Created a function in `CropGrid.jsx` to make an array of all the individual box `<div>`s in the grid.  Making them all at once like this is necessary to get non-conflicting series of React keys on each one.
-##### 31 August 2021 | commit --
+##### 31 August 2021 | commit d45068a8fad250cc05dc2595ae99b8276937412c
 * *BUGFIX!* Changed `function getGridSize()` in `Layout.jsx` file to convert user inputted numbers from `string` to `number` with `parseInt()`
 * Created temporary `grid.jsx` and `grid.css` files.  These are experimental code I will be deleting.
 * Refactored the code to create the array of box `<div>` elements to a simple array of meaningless numbers.
+##### 31 August 2021 | commit --
+* Refactored code back to creating an array of box `<div>` elements inside of `function createGrid()`
+* Moved creation of a box bank into its own function for better separation of concerns.
 
 [Back to Top](#top)
 
