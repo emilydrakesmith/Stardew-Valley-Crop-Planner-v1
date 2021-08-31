@@ -4,3 +4,16 @@
     justify-content: center;
     outline: 3px solid red;
 }
+
+.crop-grid-column {
+    display: flex;
+    flex-direction: column;
+    outline: 3px solid green;
+}
+
+.crop-grid-square {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.4rem;
+    background-color: grey;
+}

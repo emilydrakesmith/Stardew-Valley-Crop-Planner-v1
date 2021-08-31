@@ -5,26 +5,35 @@ import React, { useState, useEffect } from 'react';
 
 /******* START: IMPORT LOCAL FILES *******/
 import './CropGrid.css';
-import CropColumn from '../CropColumn/CropColumn';
+// import CropColumn from '../CropColumn/CropColumn';
 /******* END: IMPORT LOCAL FILES *********/
 
 function CropGrid(props) {
-    console.log(`numberOfColumns: ${props.numberOfColumns}`);
-    const [columnsArray, setColumnsArray] = useState([]);
+    const {numberOfColumns} = props;
+    const {numberOfRows} = props;
+    
+    console.log(`numberOfColumns: ${numberOfColumns}`);
+    console.log(`numberOfRows: ${numberOfRows}`);
 
-    useEffect(() => createGrid(props.numberOfColumns));
-
-    function createGrid(count) {
-        let columns = [];
-        for (let i=0; i<count; i++) {
-            columns.push(<CropColumn key={`crop-column-${i+1}`} />);
+    function makeBoxes(rowCount, columnCount) {
+        const boxCount = rowCount * columnCount;
+        console.log(boxCount)
+        const boxArray = [];
+        for (let i=0; i<boxCount; i++) {
+            boxArray.push(
+                <div class='crop-grid-box' key={`crop-grid-box-${i+1}`}></div>
+            );
         }
-        setColumnsArray(columns);
+        return boxArray;
     }
+
+    useEffect(() => {
+        const boxes = makeBoxes(numberOfRows, numberOfColumns);
+        console.log(boxes);
+    })
 
     return (
         <div id='crop-grid'>
-            {columnsArray}
         </div>
     );
 }

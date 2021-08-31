@@ -119,24 +119,21 @@ There are three types of branches I maintain.
 * Called the two `useState` hooks in `<Landing />` to get boxes down & across in one meta-function.
 ##### 26 August 2021 | commit eb794d135fc5d47c2873ec5efd6ae4b2644a6d13
 * Add comments to `<Landing />` to better section-off code and explain how it works.
-
-#### BRANCH render-grid-squares
 ##### 30 August 2021 | commit a85d8e3a07f6b6306d9dfb97476b928672c58e03
 * Create an HTML element to hold the crop grid.
 * Render a grey square on the page, 1rem by 1rem.
-
-#### BRANCH render-grid-squares
 ##### 30 August 2021 | commit 1b2fc7ac5282ef9b029ea500a60f7b0c47ca05a8
 * Created new page components for the crop grid and columns in the crop grid.
   * These are currently not being rendered as individual pages but that will be addressed in a later refactor.
 * Broke out CSS into individual page CSS files.
 * Set up prop drilling with new functional components to render the correct number of rows and columns.
-
-#### BRANCH render-grid-squares
-##### 30 August 2021 | commit --
+##### 30 August 2021 | commit 672778b5f675b054749ddbeeb9ef61544dc63e90
 * Using `useEffect` hook in `<CropGrid />` to render the correct number of columns.
   * Currently 1 square per column, will add more in the next commit.
 * Added margin (0.4rem) around squares in the grid.
+##### 30 August 2021 | commit --
+* Deleted the folder `CropColumn` and the files `CropColumn.jsx` and `CropColumn.css` as I was having trouble nesting these functions.  All the same processes and styles are now in the `CropGrid.jsx` and `CropGrid.css` files.
+* Created a function in `CropGrid.jsx` to make an array of all the individual box `<div>`s in the grid.  Making them all at once like this is necessary to get non-conflicting series of React keys on each one.
 
 [Back to Top](#top)
 
