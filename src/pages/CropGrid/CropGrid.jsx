@@ -1,5 +1,5 @@
 /******* START: IMPORT REACT, HOOKS, AND DONGLES *******/
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 /******* END: IMPORT REACT, HOOKS, AND DONGLES *********/
 
 
@@ -10,9 +10,21 @@ import CropColumn from '../CropColumn/CropColumn';
 
 function CropGrid(props) {
     console.log(`numberOfColumns: ${props.numberOfColumns}`);
+    const [columnsArray, setColumnsArray] = useState([]);
+
+    useEffect(() => createGrid(props.numberOfColumns));
+
+    function createGrid(count) {
+        let columns = [];
+        for (let i=0; i<count; i++) {
+            columns.push(<CropColumn key={`crop-column-${i+1}`} />);
+        }
+        setColumnsArray(columns);
+    }
+
     return (
         <div id='crop-grid'>
-            <CropColumn numberOfRows={props.numberOfRows}/>
+            {columnsArray}
         </div>
     );
 }

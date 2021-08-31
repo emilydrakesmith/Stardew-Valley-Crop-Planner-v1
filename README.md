@@ -126,11 +126,17 @@ There are three types of branches I maintain.
 * Render a grey square on the page, 1rem by 1rem.
 
 #### BRANCH render-grid-squares
-##### 30 August 2021 | commit --
+##### 30 August 2021 | commit 1b2fc7ac5282ef9b029ea500a60f7b0c47ca05a8
 * Created new page components for the crop grid and columns in the crop grid.
   * These are currently not being rendered as individual pages but that will be addressed in a later refactor.
 * Broke out CSS into individual page CSS files.
 * Set up prop drilling with new functional components to render the correct number of rows and columns.
+
+#### BRANCH render-grid-squares
+##### 30 August 2021 | commit --
+* Using `useEffect` hook in `<CropGrid />` to render the correct number of columns.
+  * Currently 1 square per column, will add more in the next commit.
+* Added margin (0.4rem) around squares in the grid.
 
 [Back to Top](#top)
 
