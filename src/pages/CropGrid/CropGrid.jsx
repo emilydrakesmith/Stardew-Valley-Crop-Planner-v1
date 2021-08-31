@@ -19,28 +19,29 @@ function CropGrid(props) {
         const squaresBank = makeSquareBank(numAcross, numDown);
         console.log(squaresBank);
 
-        const rowBank = [];
-        for (let i=0; i<numDown; i++) {
-            rowBank.push(
-                <div className='crop-grid-row' id={`crop-grid-row-${i+1}`} key={`crop-grid-row-${i+1}`}>
-                    {
-                        
-                    }
-                </div>
-            );
-        }
-        console.log(rowBank);
+        const rowsBank = makeRowBank(numDown);
+        console.log(rowsBank);
     }
 
     function makeSquareBank(across, down) {
-        const squareCount = across * down;
-        const squareBank = [];
-        for (let i=0; i<squareCount; i++) {
-            squareBank.push(
+        const squaresCount = across * down;
+        const squares = [];
+        for (let i=0; i<squaresCount; i++) {
+            squares.push(
                 <div className='crop-grid-square' id={`crop-grid-square-${i+1}`} key={`crop-grid-square-${i+1}`}></div>
             );
         }
-        return squareBank;
+        return squares;
+    }
+
+    function makeRowBank(down) {
+        const rows = [];
+        for (let i=0; i<down; i++) {
+            rows.push(
+                <div className='crop-grid-row' id={`crop-grid-row-${i+1}`} key={`crop-grid-row-${i+1}`}></div>
+            );
+        }
+        return rows;
     }
 
 

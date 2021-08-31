@@ -138,9 +138,11 @@ There are three types of branches I maintain.
 * *BUGFIX!* Changed `function getGridSize()` in `Layout.jsx` file to convert user inputted numbers from `string` to `number` with `parseInt()`
 * Created temporary `grid.jsx` and `grid.css` files.  These are experimental code I will be deleting.
 * Refactored the code to create the array of box `<div>` elements to a simple array of meaningless numbers.
-##### 31 August 2021 | commit --
+##### 31 August 2021 | commit d2494a0ccb5fcaaafa4d79e4f42b945f15caf29a
 * Refactored code back to creating an array of box `<div>` elements inside of `function createGrid()`
 * Moved creation of a box bank into its own function for better separation of concerns.
+##### 31 August 2021 | commit --
+* Moved creation of a row bank into its own function for better separation of concerns.
 
 [Back to Top](#top)
 
