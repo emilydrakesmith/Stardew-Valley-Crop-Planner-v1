@@ -1,5 +1,5 @@
 /******* START: IMPORT REACT, HOOKS, AND DONGLES *******/
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useTable, useMemo } from 'react';
 /******* END: IMPORT REACT, HOOKS, AND DONGLES *********/
 
 
@@ -9,27 +9,19 @@ import './CropGrid.css';
 /******* END: IMPORT LOCAL FILES *********/
 
 function CropGrid(props) {
-    const {numberOfColumns} = props;
-    const {numberOfRows} = props;
+    const { numberOfColumns, numberOfRows } = props;            // destructure number of boxes down and across from props
     
     console.log(`numberOfColumns: ${numberOfColumns}`);
     console.log(`numberOfRows: ${numberOfRows}`);
 
-    function makeBoxes(rowCount, columnCount) {
-        const boxCount = rowCount * columnCount;
-        console.log(boxCount)
-        const boxArray = [];
-        for (let i=0; i<boxCount; i++) {
-            boxArray.push(
-                <div class='crop-grid-box' key={`crop-grid-box-${i+1}`}></div>
-            );
-        }
-        return boxArray;
+    function makeGrid(numAcross, numDown) {
+        const cellCount = numAcross * numDown;
+        const cellCountArray = new Array(cellCount).fill(0);
+        const rowCountArray = new Array(numAcross).fill(1);
     }
 
     useEffect(() => {
-        const boxes = makeBoxes(numberOfRows, numberOfColumns);
-        console.log(boxes);
+        makeGrid(numberOfColumns, numberOfRows);
     })
 
     return (

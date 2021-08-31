@@ -21,8 +21,12 @@ function Landing() {
     const [numberDown, setNumberDown] = useState(0);                        // set value for number of boxes down in crop grid
 
     const getGridSize = () => {                                             // meta function to get both values on button click
-        setNumberAcross(document.getElementById('boxes-across').value);         // store user input for across value in state
-        setNumberDown(document.getElementById('boxes-down').value);             // store user input for down value in state
+        const inputAcross = document.getElementById('boxes-across').value;
+        const numberAcross = parseInt(inputAcross);
+        setNumberAcross(numberAcross);                                          // store user input for across value in state
+        const inputDown = document.getElementById('boxes-down').value;
+        const numberDown = parseInt(inputDown);
+        setNumberDown(numberDown);                                              // store user input for down value in state
     }
 
     return (
@@ -41,8 +45,8 @@ function Landing() {
 
             <hr />
 
-            <p>Across: {numberAcross}</p>
-            <p>Down: {numberDown}</p>
+            <p>Across: {numberAcross} {typeof numberAcross}</p>
+            <p>Down: {numberDown} {typeof numberDown}</p>
 
             <CropGrid numberOfColumns={numberAcross} numberOfRows={numberDown}/>
         </>
