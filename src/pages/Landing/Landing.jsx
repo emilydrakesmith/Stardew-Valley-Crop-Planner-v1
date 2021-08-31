@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 
 /******* START: IMPORT LOCAL FILES *******/
 import './Landing.css';
+import CropGrid from '../CropGrid/CropGrid';
 /******* END: IMPORT LOCAL FILES *********/
 
 
@@ -43,11 +44,7 @@ function Landing() {
             <p>Across: {numberAcross}</p>
             <p>Down: {numberDown}</p>
 
-            <div id='crop-grid'>
-                <div className='crop-square'>
-
-                </div>
-            </div>
+            <CropGrid numberOfColumns={numberAcross} numberOfRows={numberDown}/>
         </>
     );
 }

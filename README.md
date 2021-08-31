@@ -121,9 +121,16 @@ There are three types of branches I maintain.
 * Add comments to `<Landing />` to better section-off code and explain how it works.
 
 #### BRANCH render-grid-squares
-##### 30 August 2021 | commit --
+##### 30 August 2021 | commit a85d8e3a07f6b6306d9dfb97476b928672c58e03
 * Create an HTML element to hold the crop grid.
 * Render a grey square on the page, 1rem by 1rem.
+
+#### BRANCH render-grid-squares
+##### 30 August 2021 | commit --
+* Created new page components for the crop grid and columns in the crop grid.
+  * These are currently not being rendered as individual pages but that will be addressed in a later refactor.
+* Broke out CSS into individual page CSS files.
+* Set up prop drilling with new functional components to render the correct number of rows and columns.
 
 [Back to Top](#top)
 

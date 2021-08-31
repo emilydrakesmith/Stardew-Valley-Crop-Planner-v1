@@ -1,0 +1,6 @@
+#crop-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    outline: 3px solid red;
+}
