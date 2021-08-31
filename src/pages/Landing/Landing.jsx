@@ -42,6 +42,12 @@ function Landing() {
 
             <p>Across: {numberAcross}</p>
             <p>Down: {numberDown}</p>
+
+            <div id='crop-grid'>
+                <div className='crop-square'>
+
+                </div>
+            </div>
         </>
     );
 }

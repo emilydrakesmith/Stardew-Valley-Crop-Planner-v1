@@ -120,6 +120,11 @@ There are three types of branches I maintain.
 ##### 26 August 2021 | commit eb794d135fc5d47c2873ec5efd6ae4b2644a6d13
 * Add comments to `<Landing />` to better section-off code and explain how it works.
 
+#### BRANCH render-grid-squares
+##### 30 August 2021 | commit --
+* Create an HTML element to hold the crop grid.
+* Render a grey square on the page, 1rem by 1rem.
+
 [Back to Top](#top)
 
 
