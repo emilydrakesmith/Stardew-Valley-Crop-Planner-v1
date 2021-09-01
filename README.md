@@ -143,10 +143,14 @@ There are three types of branches I maintain.
 * Moved creation of a box bank into its own function for better separation of concerns.
 ##### 31 August 2021 | commit c5906714421cee2bfc71e785398eb99eeaf9092e
 * Moved creation of a row bank into its own function for better separation of concerns.
-##### 31 August 2021 | commit --
+##### 31 August 2021 | commit 1b7138406ba8af5853e0875e79c2153bf05d5089
 * I did a complete refactor of how `CropGrid.jsx` works.
   * JavaScript now lays out a CSS grid in the proper dimensions according to user input.
   * A template generation function inserts a `<div>` into the grid, which the grid then places.
+##### 31 August 2021 | commit --
+* Moved JSX for crop grid squares into their own functional component.
+* As many boxes are rendered as the user needs (rows * columns) and assigned one per grid section.
+* Everything started working when I got rid of hooks entirely.  Because all rendering happens after click, I don't need to update anything until the next click which is taken care of inside the `Landing.jsx` file.
 
 [Back to Top](#top)
 

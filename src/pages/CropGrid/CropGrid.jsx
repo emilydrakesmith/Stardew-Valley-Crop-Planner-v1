@@ -5,30 +5,21 @@ import React, { useState, useEffect } from 'react';
 
 /******* START: IMPORT LOCAL FILES *******/
 import './CropGrid.css';
-// import CropColumn from '../CropColumn/CropColumn';
+import CropSquare from '../../components/CropSquare';
 /******* END: IMPORT LOCAL FILES *********/
 
 function CropGrid(props) {
     const { numberOfColumns, numberOfRows } = props;            // destructure number of boxes down and across from props
 
-    useEffect(() => {
-        makeCssGrid(numberOfRows, numberOfColumns);
-        insertSquares();
-    })
+    const squares = new Array(numberOfColumns * numberOfRows).fill(1);
+    const cropSquares = squares.map((square, idx) => <CropSquare squareNumber={idx} />)
 
-    function makeCssGrid(rows, columns) {
-        document.documentElement.style.setProperty('--rows', rows);
-        document.documentElement.style.setProperty('--columns', columns);
-    }
-
-    function insertSquares() {
-        const elem = document.getElementById('crop-grid');
-        elem.innerHTML = "<div class='crop-grid-square'></div>"
-    }
+    document.documentElement.style.setProperty('--rows', numberOfRows);
+    document.documentElement.style.setProperty('--columns', numberOfColumns);
 
     return (
         <div id='crop-grid'>
-            
+            {cropSquares}
         </div>
     );
 }

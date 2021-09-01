@@ -51,7 +51,6 @@ function Landing() {
 
                 <CropGrid numberOfColumns={numberAcross} numberOfRows={numberDown}/>
             </div>
-
         </>
     );
 }
