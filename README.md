@@ -119,6 +119,38 @@ There are three types of branches I maintain.
 * Called the two `useState` hooks in `<Landing />` to get boxes down & across in one meta-function.
 ##### 26 August 2021 | commit eb794d135fc5d47c2873ec5efd6ae4b2644a6d13
 * Add comments to `<Landing />` to better section-off code and explain how it works.
+##### 30 August 2021 | commit a85d8e3a07f6b6306d9dfb97476b928672c58e03
+* Create an HTML element to hold the crop grid.
+* Render a grey square on the page, 1rem by 1rem.
+##### 30 August 2021 | commit 1b2fc7ac5282ef9b029ea500a60f7b0c47ca05a8
+* Created new page components for the crop grid and columns in the crop grid.
+  * These are currently not being rendered as individual pages but that will be addressed in a later refactor.
+* Broke out CSS into individual page CSS files.
+* Set up prop drilling with new functional components to render the correct number of rows and columns.
+##### 30 August 2021 | commit 672778b5f675b054749ddbeeb9ef61544dc63e90
+* Using `useEffect` hook in `<CropGrid />` to render the correct number of columns.
+  * Currently 1 square per column, will add more in the next commit.
+* Added margin (0.4rem) around squares in the grid.
+##### 31 August 2021 | commit 85fcae78c4aa3a0ef6a360d1aa90785a61432b2c
+* Deleted the folder `CropColumn` and the files `CropColumn.jsx` and `CropColumn.css` as I was having trouble nesting these functions.  All the same processes and styles are now in the `CropGrid.jsx` and `CropGrid.css` files.
+* Created a function in `CropGrid.jsx` to make an array of all the individual box `<div>`s in the grid.  Making them all at once like this is necessary to get non-conflicting series of React keys on each one.
+##### 31 August 2021 | commit d45068a8fad250cc05dc2595ae99b8276937412c
+* *BUGFIX!* Changed `function getGridSize()` in `Layout.jsx` file to convert user inputted numbers from `string` to `number` with `parseInt()`
+* Created temporary `grid.jsx` and `grid.css` files.  These are experimental code I will be deleting.
+* Refactored the code to create the array of box `<div>` elements to a simple array of meaningless numbers.
+##### 31 August 2021 | commit d2494a0ccb5fcaaafa4d79e4f42b945f15caf29a
+* Refactored code back to creating an array of box `<div>` elements inside of `function createGrid()`
+* Moved creation of a box bank into its own function for better separation of concerns.
+##### 31 August 2021 | commit c5906714421cee2bfc71e785398eb99eeaf9092e
+* Moved creation of a row bank into its own function for better separation of concerns.
+##### 31 August 2021 | commit 1b7138406ba8af5853e0875e79c2153bf05d5089
+* I did a complete refactor of how `CropGrid.jsx` works.
+  * JavaScript now lays out a CSS grid in the proper dimensions according to user input.
+  * A template generation function inserts a `<div>` into the grid, which the grid then places.
+##### 31 August 2021 | commit --
+* Moved JSX for crop grid squares into their own functional component.
+* As many boxes are rendered as the user needs (rows * columns) and assigned one per grid section.
+* Everything started working when I got rid of hooks entirely.  Because all rendering happens after click, I don't need to update anything until the next click which is taken care of inside the `Landing.jsx` file.
 
 [Back to Top](#top)
 

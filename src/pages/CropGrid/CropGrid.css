@@ -1,0 +1,10 @@
+#crop-grid {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 2rem);
+    grid-template-rows: repeat(var(--rows), 2rem);
+    min-width: 1rem;
+    min-height: 1rem;
+    outline: 3px solid red;
+}
+
