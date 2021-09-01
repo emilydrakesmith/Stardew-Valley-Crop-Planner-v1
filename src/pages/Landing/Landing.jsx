@@ -45,10 +45,13 @@ function Landing() {
 
             <hr />
 
-            <p>Across: {numberAcross} {typeof numberAcross}</p>
-            <p>Down: {numberDown} {typeof numberDown}</p>
+            <div className='flexbox-center-me'>
+                <p>Across: {numberAcross} {typeof numberAcross}</p>
+                <p>Down: {numberDown} {typeof numberDown}</p>
 
-            <CropGrid numberOfColumns={numberAcross} numberOfRows={numberDown}/>
+                <CropGrid numberOfColumns={numberAcross} numberOfRows={numberDown}/>
+            </div>
+
         </>
     );
 }

@@ -141,8 +141,12 @@ There are three types of branches I maintain.
 ##### 31 August 2021 | commit d2494a0ccb5fcaaafa4d79e4f42b945f15caf29a
 * Refactored code back to creating an array of box `<div>` elements inside of `function createGrid()`
 * Moved creation of a box bank into its own function for better separation of concerns.
-##### 31 August 2021 | commit --
+##### 31 August 2021 | commit c5906714421cee2bfc71e785398eb99eeaf9092e
 * Moved creation of a row bank into its own function for better separation of concerns.
+##### 31 August 2021 | commit --
+* I did a complete refactor of how `CropGrid.jsx` works.
+  * JavaScript now lays out a CSS grid in the proper dimensions according to user input.
+  * A template generation function inserts a `<div>` into the grid, which the grid then places.
 
 [Back to Top](#top)
 

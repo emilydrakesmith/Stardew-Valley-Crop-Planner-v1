@@ -1,7 +1,9 @@
 #crop-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(var(--columns));
+    grid-template-rows: repeat(var(--rows));
+    grid-area: auto;
     outline: 3px solid red;
 }
 
@@ -16,4 +18,8 @@
     height: 1rem;
     margin: 0.4rem;
     background-color: grey;
+}
+
+.red-background {
+    background-color: red;
 }
