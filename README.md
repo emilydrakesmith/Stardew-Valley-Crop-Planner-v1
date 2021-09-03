@@ -167,8 +167,11 @@ There are three types of branches I maintain.
 ##### 02 September 2021 | commit 5b8bf9c8c623623926f0b7ce53096617e3b65504
 * Removed testing code from `Landing.jsx` file.
 * Imported the `useState` hook to `CropSquare.jsx` and set up a state value for a CSS class to be added/removed on click.
-##### 02 September 2021 | commit --
+##### 02 September 2021 | commit 404577e30cba2a92c937bcb7e63bed7d526087c6
 * Attached a function click handler as an `onClick` attribute to each individual crop square.
+##### 02 September 2021 | commit --
+* The click handler on each individual crop square rendered toggles a CSS class on that and only that `<div>` on click.
+* Recorded current thoughts on how to proceed with adding and removing CSS classes for each crop when clicked.
 
 [Back to Top](#top)
 
