@@ -164,9 +164,11 @@ There are three types of branches I maintain.
 <a id='branch-make-crop-squares-clickable'>
 
 #### BRANCH make-crop-squares-clickable
-##### [DATE] | commit --
+##### 02 September 2021 | commit 5b8bf9c8c623623926f0b7ce53096617e3b65504
 * Removed testing code from `Landing.jsx` file.
 * Imported the `useState` hook to `CropSquare.jsx` and set up a state value for a CSS class to be added/removed on click.
+##### 02 September 2021 | commit --
+* Attached a function click handler as an `onClick` attribute to each individual crop square.
 
 [Back to Top](#top)
 

@@ -1,5 +1,5 @@
 /******* START: IMPORT REACT, HOOKS, AND DONGLES *******/
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 /******* END: IMPORT REACT, HOOKS, AND DONGLES *********/
 
 
@@ -9,12 +9,16 @@ import './CropSquare.css';
 
 
 function CropSquare(props) {
-    const [cropClass, setCropClass] = useState(null);
+    const [cropClass, setCropClass] = useState(false);
+
+    function sayClicked() {
+        console.log('clicked!');
+    }
 
     const {squareNumber} = props;
     const idString = `crop-grid-square-${squareNumber}`;
     return (
-        <div className='crop-grid-square' id={idString} key={idString} />
+        <div className='crop-grid-square' id={idString} key={idString} onClick={() => sayClicked()} />
     );
 }
 
