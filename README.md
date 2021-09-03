@@ -59,10 +59,14 @@ There are three types of branches I maintain.
 * On GitHub: Merge pull request #5 from mhsmith321/create-initial-landing-page
 * [Commit Notes](#branch-create-initial-landing-page)
 * [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/5)
-##### v 0.1.2.0 | 26 August 2021 | commit 97404ef2a92fdb66c0ba68db3c6279dd9eddeb84 | Current Version
+##### v 0.1.2.1 | 26 August 2021 | commit 97404ef2a92fdb66c0ba68db3c6279dd9eddeb84
 * On GitHub: Merge pull request #7 from mhsmith321/render-grid-squares 
 * [Commit Notes](#branch-render-grid-squares)
 * [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/7)
+##### v 0.1.2.2 | 26 August 2021 | commit c4f59326f1d7fa6cbb85be0fc51fd53b97e6989c | Current Version
+* On GitHub: Merge pull request #8 from mhsmith321/make-crop-squares-clickable
+* [Commit Notes](#branch-make-crop-squares-clickable)
+* [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/8)
 
 
 #### BRANCH meta-changes
@@ -169,9 +173,27 @@ There are three types of branches I maintain.
 * Imported the `useState` hook to `CropSquare.jsx` and set up a state value for a CSS class to be added/removed on click.
 ##### 02 September 2021 | commit 404577e30cba2a92c937bcb7e63bed7d526087c6
 * Attached a function click handler as an `onClick` attribute to each individual crop square.
-##### 02 September 2021 | commit --
+##### 02 September 2021 | commit 051cc5592fde496198bc508c3414ba887fdec5c7
 * The click handler on each individual crop square rendered toggles a CSS class on that and only that `<div>` on click.
 * Recorded current thoughts on how to proceed with adding and removing CSS classes for each crop when clicked.
+
+<a id='create-initial-crop-data'>
+
+#### BRANCH create-initial-crop-data
+##### 02 September 2021 | commit 819ca77dc333bd94f248781f12804bb26a7622fc
+* *Bugfix!* Moved the code to render a `key` attribute for each crop grid square from the crop grid square component to the parent where it's called.
+* Added a new file `cropData.js` in the `/src/data` directory to hold all crop data.  I initialized it as an object so that crop entries can be found directly.
+##### 03 September 2021 | commit --
+* It quickly became apparent that there is far too much data to hold in one file and be easily maintainable.  I created a new directory `/src/data/crops` to hold individual `.js` data files on each crops.
+* I had intended for this data to live in the back-end of this project but am not ready to set that up yet.  I may put this project on hold to build an API for Stardew Valley data which exists completely separate from this app.
+* Completed data files for the following crops:
+  * Bluberry: `blueberry.js`
+  * Blue Jazz: `blueJazz.js`
+  * Cauliflower: `cauliflower.js`
+  * Coffee Bean: `coffeeBean.js`
+  * Corn: `corn.js`
+  * Hops: `hops.js`
+  * Hot Pepper: `hotPepper.js`
 
 [Back to Top](#top)
 
