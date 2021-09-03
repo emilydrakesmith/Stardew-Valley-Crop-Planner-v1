@@ -55,10 +55,15 @@ There are three types of branches I maintain.
 * On GitHub: Merge pull request #3 from mhsmith321/create-calendar-data
 * [Commit Notes](#branch-create-calendar-data)
 * [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/3)
-##### v 0.1.2.0 | 26 August 2021 | commit bad9404d3be21c5c6067a60a0e67d5dca1e156f5 | Current Version
+##### v 0.1.2.0 | 26 August 2021 | commit bad9404d3be21c5c6067a60a0e67d5dca1e156f5
 * On GitHub: Merge pull request #5 from mhsmith321/create-initial-landing-page
 * [Commit Notes](#branch-create-initial-landing-page)
 * [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/5)
+##### v 0.1.2.0 | 26 August 2021 | commit 97404ef2a92fdb66c0ba68db3c6279dd9eddeb84 | Current Version
+* On GitHub: Merge pull request #7 from mhsmith321/render-grid-squares 
+* [Commit Notes](#branch-render-grid-squares)
+* [Summary on GitHub](https://github.com/mhsmith321/Stardew-Valley-Crop-Planner-v1/pull/7)
+
 
 #### BRANCH meta-changes
 ##### 26 August 2021 | commit 798ebe92b0847e0b272c5d164e2aa038e26c8745
@@ -119,6 +124,10 @@ There are three types of branches I maintain.
 * Called the two `useState` hooks in `<Landing />` to get boxes down & across in one meta-function.
 ##### 26 August 2021 | commit eb794d135fc5d47c2873ec5efd6ae4b2644a6d13
 * Add comments to `<Landing />` to better section-off code and explain how it works.
+
+<a id='branch-render-grid-squares'>
+
+#### BRANCH render-grid-squares
 ##### 30 August 2021 | commit a85d8e3a07f6b6306d9dfb97476b928672c58e03
 * Create an HTML element to hold the crop grid.
 * Render a grey square on the page, 1rem by 1rem.
@@ -147,10 +156,17 @@ There are three types of branches I maintain.
 * I did a complete refactor of how `CropGrid.jsx` works.
   * JavaScript now lays out a CSS grid in the proper dimensions according to user input.
   * A template generation function inserts a `<div>` into the grid, which the grid then places.
-##### 31 August 2021 | commit --
+##### 31 August 2021 | commit 33385c6fcaddb0e2ec244d4ab7cef1a77df70680
 * Moved JSX for crop grid squares into their own functional component.
 * As many boxes are rendered as the user needs (rows * columns) and assigned one per grid section.
 * Everything started working when I got rid of hooks entirely.  Because all rendering happens after click, I don't need to update anything until the next click which is taken care of inside the `Landing.jsx` file.
+
+<a id='branch-make-crop-squares-clickable'>
+
+#### BRANCH make-crop-squares-clickable
+##### [DATE] | commit --
+* Removed testing code from `Landing.jsx` file.
+* Imported the `useState` hook to `CropSquare.jsx` and set up a state value for a CSS class to be added/removed on click.
 
 [Back to Top](#top)
 

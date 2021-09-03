@@ -1,5 +1,5 @@
 /******* START: IMPORT REACT, HOOKS, AND DONGLES *******/
-import React from 'react';
+import React, { useState } from 'react';
 /******* END: IMPORT REACT, HOOKS, AND DONGLES *********/
 
 
@@ -9,6 +9,8 @@ import './CropSquare.css';
 
 
 function CropSquare(props) {
+    const [cropClass, setCropClass] = useState(null);
+
     const {squareNumber} = props;
     const idString = `crop-grid-square-${squareNumber}`;
     return (
