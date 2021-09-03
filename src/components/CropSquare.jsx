@@ -44,7 +44,7 @@ function CropSquare(props) {
     }
 
     return (
-        <div className='crop-grid-square' id={idString} key={idString} onClick={event => handleClick(event)} />
+        <div className='crop-grid-square' id={idString} onClick={event => handleClick(event)} />
     );
 }
 
