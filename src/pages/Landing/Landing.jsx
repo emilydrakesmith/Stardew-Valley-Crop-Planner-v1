@@ -46,8 +46,8 @@ function Landing() {
             <hr />
 
             <div className='flexbox-center-me'>
-                <p>Across: {numberAcross} {typeof numberAcross}</p>
-                <p>Down: {numberDown} {typeof numberDown}</p>
+                <p>Across: {numberAcross}</p>
+                <p>Down: {numberDown}</p>
 
                 <CropGrid numberOfColumns={numberAcross} numberOfRows={numberDown}/>
             </div>

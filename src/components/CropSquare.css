@@ -4,3 +4,7 @@
     margin: 0.4rem;
     background-color: grey;
 }
+
+.red-background {
+    background-color: red !important;
+}
