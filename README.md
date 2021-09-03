@@ -180,9 +180,20 @@ There are three types of branches I maintain.
 <a id='create-initial-crop-data'>
 
 #### BRANCH create-initial-crop-data
-##### 02 September 2021 | commit --
+##### 02 September 2021 | commit 819ca77dc333bd94f248781f12804bb26a7622fc
 * *Bugfix!* Moved the code to render a `key` attribute for each crop grid square from the crop grid square component to the parent where it's called.
 * Added a new file `cropData.js` in the `/src/data` directory to hold all crop data.  I initialized it as an object so that crop entries can be found directly.
+##### 03 September 2021 | commit --
+* It quickly became apparent that there is far too much data to hold in one file and be easily maintainable.  I created a new directory `/src/data/crops` to hold individual `.js` data files on each crops.
+* I had intended for this data to live in the back-end of this project but am not ready to set that up yet.  I may put this project on hold to build an API for Stardew Valley data which exists completely separate from this app.
+* Completed data files for the following crops:
+  * Bluberry: `blueberry.js`
+  * Blue Jazz: `blueJazz.js`
+  * Cauliflower: `cauliflower.js`
+  * Coffee Bean: `coffeeBean.js`
+  * Corn: `corn.js`
+  * Hops: `hops.js`
+  * Hot Pepper: `hotPepper.js`
 
 [Back to Top](#top)
 
